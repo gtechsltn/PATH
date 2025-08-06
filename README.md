@@ -1,4 +1,20 @@
 # PATH
++ System.Environment.GetEnvironmentVariable("PATH")
++ System.EnvironmentVariableTarget.Machine
++ System.EnvironmentVariableTarget.Process
++ System.EnvironmentVariableTarget.User
++ System.Security.SecurityException
++ System.IO.Path.PathSeparator
+
+```
+string? javaHome = Environment.GetEnvironmentVariable("JAVA_HOME");
+Console.WriteLine($"JAVA_HOME: {javaHome ?? "Not set"}");
+
+System.Environment.GetEnvironmentVariable("PATH");
+System.Environment.GetEnvironmentVariable("PATH", System.EnvironmentVariableTarget.Machine);
+System.Environment.GetEnvironmentVariable("PATH", System.EnvironmentVariableTarget.Process);
+System.Environment.GetEnvironmentVariable("PATH", System.EnvironmentVariableTarget.User);
+```
 
 ```
 using System;
